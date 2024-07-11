@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O-movies</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- / = la route sur laquel on veut attérir à l'envoi du form -->
+            <a href="/">Accueil</a>
+            <a href="/suggestion">Une suggestion ?</a>
+            <!-- action c'est la ou on va -->
+             <!-- method, c'est la méthode http utilisé -->
+            <form action="/" method="GET">
+                <!-- balise for est relié à la balise id d'un input -->
+                <label for="search">Recherchez un film</label>
+                <!-- name="search" on pourrait avoir name="tutu" -->
+                <input type="text" id="search" name="search">
+                <button type="submit">Rechercher</button>
+
+            </form>
+        </nav>
+    </header>
+    <main>

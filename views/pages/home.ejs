@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+
+<h1>La liste des films</h1>
+<!-- TODO liste des films -->
+<ul>
+    <% for (const movie of movies) { %>
+    
+        <li>
+            <%= movie.title %> - <%= movie.year %>
+            <ul>
+                <% for (const cast of movie.cast) { %>
+                    <li><%= cast %></li>
+                <% } %>
+            </ul>
+        </li>
+
+    <% } %>
+</ul>
+
+<%- include('../partials/footer') %>
